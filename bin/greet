@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
 require_relative "../lib/greeting.rb"
 
-# code your CLI here!
+puts "what's your name?"  # outputs a welcome message and asks the user for input
+name = gets.strip        # uses #gets.strip to capture the user input and set it equal to a variable called name
+greeting(name)           # calls the #greeting method with an argument of the user's name and returns the new greeting, interpolating the user's name
